@@ -1,0 +1,52 @@
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 50%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        font-family: 'Quicksand', sans-serif;
+      }
+
+
+.hero {
+    height: 100vh;
+    background-image: url(../images/top.jpg);
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+}
+
+.centered {
+    position: absolute;
+    bottom: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2em;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+}
+
+.mobile{
+    font-family: 'Quicksand', sans-serif;
+}
+
+h3, h1, h5 {
+    font-family: 'Quicksand', sans-serif;
+}
+
+@media (max-width: 500px) {
+  .hero{display: none;}
+  .mobile{display: show;}
+
+}
+
+@media (min-width: 500px) {
+  .hero{display: show;}
+  .mobile {display: none;}
+
+}
